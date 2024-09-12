@@ -1,0 +1,97 @@
+body {
+  background-image: url(imgtikus/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div h2 {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  font-size: 50px;
+  font-family: arial;
+  color: black;
+  margin: 1px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid white;
+  color: white;
+  background: black;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.container {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  cursor: url(imgtikus/kon1.png), auto;
+}
+
+.container:active {
+  cursor: url(imgtikus/kon2.png), auto;
+}
+
+.tanah {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  bottom: 35px;
+}
+
+.tanah::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: url(imgtikus/kuburan.png) bottom center no-repeat;
+  background-size: 60%;
+  background-position: center;
+  position: absolute;
+  bottom: -53px;
+}
+
+.tikus {
+  width: 95%;
+  height: 110%;
+  background: url(imgtikus/zombie.png) bottom center no-repeat;
+  background-size: 40%;
+  position: absolute;
+  top: 40px;
+  transition: top 0.3s;
+}
+
+.tanah.muncul .tikus {
+  top: -120px;
+}
+
+/* responsive */
+
+
+
+
